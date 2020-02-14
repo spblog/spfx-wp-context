@@ -10,12 +10,10 @@ export default class SubModule extends React.Component<{}, {}> {
     this.wpContext = getContext();
   }
   public render() {
-    const helloWorldContext = getContext();
-
     return (
       <div>
         <div>Sub component:</div>
-        <div>{helloWorldContext.instanceId}</div>
+        <div>{this.wpContext.instanceId}</div>
       </div>
     );
   }
